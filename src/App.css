@@ -1,0 +1,73 @@
+.App {
+  height: 100vh;
+  background-color: black;
+}
+
+.navigationBar {
+  position: relative;
+  background-color: black;
+  height: 4rem;
+  width: 100%;
+}
+
+.menu{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  height: 4rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #34b0be;
+}
+
+.show{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 4rem;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: #34b0be;
+}
+
+svg {
+  display: none;
+}
+
+@media screen and ( max-width: 900px) {
+
+  .menu {
+    position: absolute;
+    right: 0;
+    width: 375px;
+    height: 100vh;
+    justify-content: left;
+    flex-direction: column;
+    margin-top: 5rem;
+    transition: 1s;
+  }
+
+  .show{
+    right: -375px;
+  }
+  
+  .navigationBar h4 {
+    width: 100%;
+    text-align: left;
+  }
+
+  svg {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+}
+
